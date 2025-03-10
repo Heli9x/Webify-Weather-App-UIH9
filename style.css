@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", Arial, Calibri, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all .5s;
+}
+
+:root{
+    --text-color: #E0E0E0;
+    --background-color: #061e2c77;
+    --main-color: #121212;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.flex-contain{
+    display: flex;
+}
+
+.f-flip{
+    flex-direction: column-reverse;
+}
+
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-even{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.f-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-center-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.f-center-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.f-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-borders{
+    border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--main-color);
+    /*background-image: url('https://images.pexels.com/photos/378442/pexels-photo-378442.jpeg?cs=srgb&dl=dawn-nature-sky-378442.jpg&fm=jpg');*/
+    background-size: cover;
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+.app{
+    min-height: 520px;
+    width: 400px;
+    background-color: var(--background-color);
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+header{
+    height: 55%;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+header .heading{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px #36313170;
+    background-color: #213c5f6b;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.heading .place{
+    gap: 10px;
+}
+
+.heading .btn button{
+    padding: 7.5px;
+    height: auto;
+    width: 30px;
+    background-color: var(--text-color);
+    border: none;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+
+.weather-info{
+    margin: 20px 0;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #213c5f6b;
+
+}
+
+.weather-info .weather-img{
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: contain;
+    contain: content;
+}
+
+.weather-info .details{
+    color: var(--text-color);
+}
+
+.weather-info .details .temp .num{
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+.weather-info .details .degrees-ico i{
+    color: transparent;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    margin-right: 5px;
+    font-size: 0.5rem;
+}
+
+.container{
+    padding: 10px;
+}
+
+.container .heading{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    color: var(--text-color);
+}
+
+
+.card-grid .card{
+    margin: 10px;
+    padding: 10px;
+    height: 150px;
+    width: 100px;
+    background-color: #213c5f6b;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.card .card-title{
+    font-size: 0.75rem;
+    margin: 5px 0 0 0;
+}
+
+.card .card-ico{
+    font-size: 2.5rem;
+}
+
+.search-box{
+    height: 50px;
+    width: auto;
+    margin: 20px;
+}
+
+.search-box .input{
+    height: 100%;
+    width: 400px;
+    margin: 20px;
+    gap: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.search-box .input input{
+    height: 30px;
+    width: 320px;
+    padding: 10px;
+    font-size: 1.195rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+.search-box .input input::placeholder{
+    color: var(--text-color);
+}
+
+.search-box .input #search{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #213c5f6b;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+

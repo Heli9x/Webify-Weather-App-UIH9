@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Helio Software | Weather App</title>
+    <script src="https://kit.fontawesome.com/3e82404ffd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="flex-contain f-center f-col">
+    <div class="search-box">
+        <div class="input f-center">
+            <input type="text" id="info" placeholder="search a city">
+            <button class="fas fa-search" id="search"></button>
+        </div>
+    </div>
+    <div class="app">
+        <header class="f-col">
+            <div class="heading f-between f-center">
+                <h3 class="place flex-contain"  id='city'>Themaria</h3>
+                <div class="theme btn">
+                    <button id="themer">
+                        <i class="fas fa-brush"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="weather-info f-center-left">
+                <div class="weather-img">
+                    <img src="https://openweathermap.org/img/wn/04d@4x.png" alt="" id="w-img">
+                </div>
+                <div class="details f-center f-flip">
+                    <div class="descript">
+                        cloudy
+                    </div>
+                    <div class="temp flex-contain">
+                        <h3 class="num">0</h3>
+                        <div class="degrees-ico ">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h1> C</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container f-center f-col">
+            <div class="heading">
+                <h3>07 Feb 2024</h3>
+            </div>
+            <div class="card-grid flex-contain">
+                <!--Data will be loaded through JS-->
+                <div class="card f-col f-center-left">
+                    <div class="card-title">Wind</div>
+                    <div class="card-ico">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h4 class="merit">
+                        0 <small>km/h</small>
+                    </h4>
+                </div>
+                <div class="card f-col f-center-left">
+                    <div class="card-title">Humiduty</div>
+                    <div class="card-ico">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h4 class="merit">
+                        0 <small>%</small>
+                    </h4>
+                </div>
+                <div class="card f-col f-center-left">
+                    <div class="card-title">Pressure</div>
+                    <div class="card-ico">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4 class="merit">
+                        0 <small>atm</small>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
